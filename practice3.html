@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice 3</title>
+</head>
+
+<body>
+    <h1>EECS Lab 7 Practice 3</h1>
+
+    First Password: <input id="pass1" type="text" value=""><br>
+    Second Password: <input id="pass2" type="text" value=""><br>
+    <button onclick="check()">Validate Your Passwords</button>
+
+    <script>
+        function check() {
+            console.log("Here1");
+            var pass1 = document.getElementById("pass1").value;
+            var pass2 = document.getElementById("pass2").value;
+
+            if (pass1.length < 8) {
+                console.log("Here2");
+                alert("The length of the first password is less than 8 letters!")
+            } else if (pass2.length < 8) {
+                alert("The length of the second password is less than 8 letters!")
+            } else if (pass1 != pass2) {
+                alert("Two passwords don't match!")
+            } else {
+                alert("Everything is good!")
+            }
+        }   
+    </script>
+</body>
+
+</html>
