@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Multiplication Table Generator</title>
     <style>
         table {
             border-collapse: collapse;
